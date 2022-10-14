@@ -1,0 +1,15 @@
+Reuasablity of class
+1. Single level Inheritance:-
+->One parent(base) class and One child(derived) class
+
+2.Multiple Inheritance:-
+->Multiple perent and one child
+
+3.Multi-Level Inheritance:-
+->One grand parent class, One parent class and child class
+
+4.Hirachical 
+->One base class and multiple derived class.
+
+5.Hybrid
+->Combition of any other 2 types.

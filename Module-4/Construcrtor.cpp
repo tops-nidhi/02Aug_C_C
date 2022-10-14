@@ -5,7 +5,7 @@ class Construct
 public:
     int a,b;
     int n;
-    Construct()
+    Construct() //Default Constructer
     {
         cout<<"Enter 2 no:";
         cin>>a>>b;

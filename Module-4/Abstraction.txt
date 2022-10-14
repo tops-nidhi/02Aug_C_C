@@ -1,0 +1,3 @@
+Abstraction is use to hide the background detail
+which was not important for user
+for ex:call

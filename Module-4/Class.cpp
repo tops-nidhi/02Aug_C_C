@@ -6,7 +6,7 @@ public:
     int no;//data member
     int data()//member function
     {
-        no=100;
+        no=100;//initialize the data member
         cout<<"Value of no is:"<<no;
         return 0;
     }

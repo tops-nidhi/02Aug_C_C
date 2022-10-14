@@ -3,7 +3,7 @@ Defination:-
 2.Class is blue-print of the object
 ---------------------------------------
 As per structure define as it is
-----------------------------------
+
 how to define :
 class//keyword class_name
 {
@@ -11,10 +11,10 @@ class//keyword class_name
 };//class body must be over|terminate
 -----------------------------------
 Rules:-
-Define data member(variable define inside the class) in class
+Only Define data member(variable define inside the class) in class
 Not inisialize data member out of the function
 inisialize value only inside the function
-inisialize min assign value to variable as shown below 
+->inisialize min assign value to variable as shown below 
 int no=100;
 ------------------------------------------
 class any time not occupie the memory
