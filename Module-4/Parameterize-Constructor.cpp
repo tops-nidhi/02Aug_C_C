@@ -18,7 +18,7 @@ public:
     }
 };
 int main()
-{
+{ 
     Construct cn;
     Construct con(67);
     con.add(45,56);

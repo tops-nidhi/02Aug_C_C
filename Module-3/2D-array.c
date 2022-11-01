@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include<stdio.h>
 void main()
 {
@@ -22,28 +21,3 @@ void main()
 		printf("\n");
 	}
 }
-=======
-#include<stdio.h>
-void main()
-{
-	
-	int no[5][5]={{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5}};
-	int i,j;
-	for(i = 0; i < 5; i++)
-	{
-		for(j = 0; j < 5; j++)
-		{
-			printf("Entrer value no[%d][%d]:", i+1, j+1);
-			scanf("%d",&no[i][j]);
-		}
-	}
-	for(i = 0; i < 5; i++)
-	{
-		for(j = 0; j < 5; j++)
-		{
-			printf("%d ",no[i][j]);
-		}
-		printf("\n");
-	}
-}
->>>>>>> 539d7c37015d4b334063987505bae3915be4a7f4

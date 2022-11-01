@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-class Grand
+class A
 {
 public:
     void gdata()
@@ -8,7 +8,7 @@ public:
         cout<<"This is grand perent.";
     }
 };
-class Perent : public Grand
+class B : public A
 {
 public:
     void pdata()
@@ -17,7 +17,7 @@ public:
         cout<<"This is perent class.";
     }
 };
-class Child : public Perent
+class C : public B
 {
 public:
     void cdata()
@@ -27,7 +27,7 @@ public:
 };
 int main()
 {
-    Child c1;
+    C c1;
     c1.gdata();
     c1.pdata();
     c1.cdata();
