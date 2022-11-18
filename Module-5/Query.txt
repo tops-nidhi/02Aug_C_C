@@ -1,0 +1,91 @@
+Create Database:-
+CREATE DATABASE `hello`;
+-----------------------------------
+CREATE TABLE `table_name`
+(id int (10),
+fname varchar (20),
+lname varchar (20),
+class text (20),
+per float (10));
+----------------------------------------------
+INSERT INTO `table_name`
+(id, fname, lname,class,per) VALUES ('value-1','value-2','value-3','value-4','value-5');
+-------------------------------------------------
+(for view all column)
+->SELECT * FROM `table_name`;
+
+(for view unique data)
+->SELECT DISTINCT * FROM `table_name`;
+
+(for view specific column data)
+->SELECT column_name1,column_name2 FROM `table_name` ;
+
+(for view specific data)
+->SELECT column_name1,column_name2 FROM `table_name` WHERE=codition;
+
+SELECT SUM(`id`) as sum_of_id FROM `table_name` ;
+
+SELECT COUNT(`id`) as sum_of_id FROM `table_name`; 
+
+SELECT avg(`id`) as sum_of_id FROM `table_name`;
+
+SELECT min(`id`) as sum_of_id FROM `table_name`; 
+SELECT max(`id`) as sum_of_id FROM `table_name`;
+
+SELECT * FROM `table_name` ORDER BY `id` ASC|DESC;
+
+SELECT * FROM `table_name` WHERE `lname` LIKE= 'a%';
+-----------------------------------------------------------
+
+DROP TABLE `table_name`;
+
+DROP database `hello`;
+
+trucate table `table_name`; 
+
+delete column `column_name` where=condition;
+
+ALTER TABLE `table_name` CHANGE `old_column_name` `new_column_name` int (10);
+
+ALTER TABLE `table_name` ADD `new_column_name` int (10)  FIRST;//only if you want to add at first row
+
+alter table `table_name` add primery key (`column_name`);
+
+alter table `table_name` add forigen key `column_name` refrence `refrencetable_name`(`column_name`);
+
+alter table `table_name` add unique key `column_name`;
+
+CREATE INDEX `index_name` on `table_name`(`column_name`);
+
+DROP INDEX `index_name`;
+
+UPDATE `stdata` set `phone`='504987630' WHERE  `id` BETWEEN 202 AND 505;
+
+SELECT table1_name.column_name, table2_name.column_name...FROM table1_name LEFT JOIN table2ON 
+table1_name.column_name = table2.column_name;
+
+SELECT table1_name.column_name, table2_name.column_name...FROM table1_name Right JOIN table2ON 
+table1_name.column_name = table2.column_name;
+
+SELECT table1_name.column_name, table2_name.column_name...FROM table1_name Inner JOIN table2ON 
+table1_name.column_name = table2.column_name;
+
+---------------------------------------------------------
+DELIMITER //
+	
+    CREATE PROCEDURE myproce (INOUT myid int)
+    AS
+    BEGIN 
+    
+    	SELECT * FROM `stdata` WHERE `stid`=myid;
+    
+    END//
+    
+    
+DELIMITER;
+--------------------------------------------------------
+
+
+
+
+
